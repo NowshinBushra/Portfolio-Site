@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Site</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
@@ -13,7 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-dark text-white">
+<body data-bs-theme="dark" class="text-white">
 
     <header>
         <!-- -------------------Navbar section---------------- -->
@@ -51,40 +51,45 @@
         </nav>
         <!-- ----------------------- Banner section --------------------- -->
 
-        <section class="banner d-flex">
-            <div class="intro">
-                <h1 class="text-info">HI!</h1>
-                <h1 class="text-info">I'm GIAS UDDIN</h1>
-                <h3>Web Developer || React Developer || Programmer</h3>
-                <br>
-                <p>I am an enthusiastic JavaScript developer with knowing some framework for the frontend and the
-                    backend. I know Basic PHP and MySQL but basically a MERN developer</p>
+        <section class="mb-5 container" style="max-width: 1150px;">
+            <div class="row g-0">
+                <div class="col-md-8 mb-3">
+                    <div class="card-body mt-5">
+                        <h1 class="text-info">HI!</h1>
+                        <h1 class="text-info">I'm GIAS UDDIN</h1>
+                        <h3>Web Developer || React Developer || Programmer</h3>
+                        <br>
+                        <p>I am an enthusiastic JavaScript developer with knowing some framework for the frontend and
+                            the
+                            backend. I know Basic PHP and MySQL but basically a MERN developer</p>
+                    </div>
 
-                <div>
-                    <a class="text-info" href="https://github.com/"><i class="fa-brands fa-github"></i></a>
-                    <a class="text-info" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a class="text-info" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-                    <button class="btn btn-info" type=""><a class="nav-link text-white"
-                        href="/images/galaxy.gif" download="resume">Resume <i
-                            class="fa-solid fa-download text-dark"></i></a>
-                </button>
+                    <div>
+                        <a class="text-info" href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                        <a class="text-info"href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a class="text-info" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                        <button class="btn btn-info" type=""><a class="nav-link text-white" href="/images/galaxy.gif"
+                                download="resume">Resume <i class="fa-solid fa-download text-dark"></i></a>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="w-25">
-                <img src="/images/gias.jpg" class="img-fluid" alt="">
+                <div class="col-md-4">
+                    <img src="/images/gias.jpg" class="img-fluid" alt="">
+                </div>
             </div>
         </section>
 
     </header>
 
     <main>
-        <section class="d-flex justify-content-center py-5">
+        <!--  ------------------------ Portfolio section -------------------- -->
+        <section class="d-flex justify-content-center p-5">
             <div>
                 <h1 class="text-center">Portfolio</h1>
 
                 <div class="card mb-3 bg-dark text-white" style="max-width: 900px;">
                     <div class="row g-0">
-                        <div class="col-md-6">
+                        <div class="col-md-6 my-3">
 
                             <div id="carouselExample" class="carousel slide">
                                 <div class="carousel-inner">
@@ -106,11 +111,13 @@
                             </div>
 
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 my-3">
                             <div class="card-body">
                                 <h3 class="card-title d-inline text-info">Online University </h3>
-                                <a class="text-info" href="" target="_blank"><i class="fa-brands fa-codepen"></i></a>
-                                <a class="text-info" href="" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                                <a class="text-info" href="https://github.com/NowshinBushra/Portfolio-Site"
+                                    target="_blank"><i class="fa-brands fa-codepen"></i></a>
+                                <a class="text-info" href="https://github.com/NowshinBushra/Portfolio-Site"
+                                    target="_blank"><i class="fa-solid fa-globe"></i></a>
                                 <p class="card-text">This is Travel service Agency website.user can login via Facebook
                                     sign-in,Google Sign-in and also Can Create an New Account for use the services.user
                                     can Choice the service as he/she want.
@@ -159,8 +166,10 @@
                         <div class="col-md-6">
                             <div class="card-body">
                                 <h3 class="card-title d-inline text-info">Online University </h3>
-                                <a class="text-info" href="" target="_blank"><i class="fa-brands fa-codepen"></i></a>
-                                <a class="text-info" href="" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                                <a class="text-info" href="https://github.com/NowshinBushra/Portfolio-Site"
+                                    target="_blank"><i class="fa-brands fa-codepen"></i></a>
+                                <a class="text-info" href="https://github.com/NowshinBushra/Portfolio-Site"
+                                    target="_blank"><i class="fa-solid fa-globe"></i></a>
                                 <p class="text-white">This is Travel service Agency website.user can login via Facebook
                                     sign-in,Google Sign-in and also Can Create an New Account for use the services.user
                                     can Choice the service as he/she want.
@@ -185,60 +194,68 @@
         </section>
 
 
-        <section class="d-flex align-items-center justify-content-center py-5">
-            <div>
-                <div>
-                    <h3>Expertise:</h3>
-                    <p>
-                        <span class="badge text-bg-secondary">React.js</span>
-                        <span class="badge text-bg-secondary">Javascript</span>
-                        <span class="badge text-bg-secondary">node.js</span>
-                        <span class="badge text-bg-secondary">Firebase</span>
-                        <span class="badge text-bg-secondary">Express.js</span>
-                        <span class="badge text-bg-secondary">HTML</span>
-                        <span class="badge text-bg-secondary">Bootstrap</span>
-                        <span class="badge text-bg-secondary">MongoDB</span>
-                    </p>
-                </div>
-                <div>
-                    <h3>Comfortable:</h3>
-                    <p>
-                        <span class="badge text-bg-secondary">SQL</span>
-                        <span class="badge text-bg-secondary">Redux</span>
-                        <span class="badge text-bg-secondary">Socket.io</span>
-                        <span class="badge text-bg-secondary">AWS</span>
-                        <span class="badge text-bg-secondary">Docker</span>
-                        <span class="badge text-bg-secondary">TypeScript</span>
-                        <span class="badge text-bg-secondary"> Next.js</span>
-                    </p>
-                </div>
-                <div>
-                    <h3>Familiar:</h3>
-                    <p>
-                        <span class="badge text-bg-secondary">C++</span>
-                        <span class="badge text-bg-secondary">Python</span>
-                        <span class="badge text-bg-secondary">Spring Boot</span>
-                        <span class="badge text-bg-secondary">Networking</span>
-                    </p>
-                </div>
-                <div>
-                    <h3>Tools:</h3>
-                    <p>
-                        <span class="badge text-bg-secondary">VS CODE</span>
-                        <span class="badge text-bg-secondary">JIRA</span>
-                        <span class="badge text-bg-secondary">Trello</span>
-                        <span class="badge text-bg-secondary">Git</span>
-                    </p>
-                </div>
-            </div>
+        <section class="d-flex container align-items-center justify-content-around py-5">
+            <div class="mb-3 container" style="max-width: 990px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+
+                        <div>
+                            <h3>Expertise:</h3>
+                            <p>
+                                <span class="badge text-bg-secondary">React.js</span>
+                                <span class="badge text-bg-secondary">Javascript</span>
+                                <span class="badge text-bg-secondary">node.js</span>
+                                <span class="badge text-bg-secondary">Firebase</span>
+                                <span class="badge text-bg-secondary">Express.js</span>
+                                <span class="badge text-bg-secondary">HTML</span>
+                                <span class="badge text-bg-secondary">Bootstrap</span>
+                                <span class="badge text-bg-secondary">MongoDB</span>
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Comfortable:</h3>
+                            <p>
+                                <span class="badge text-bg-secondary">SQL</span>
+                                <span class="badge text-bg-secondary">Redux</span>
+                                <span class="badge text-bg-secondary">Socket.io</span>
+                                <span class="badge text-bg-secondary">AWS</span>
+                                <span class="badge text-bg-secondary">Docker</span>
+                                <span class="badge text-bg-secondary">TypeScript</span>
+                                <span class="badge text-bg-secondary"> Next.js</span>
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Familiar:</h3>
+                            <p>
+                                <span class="badge text-bg-secondary">C++</span>
+                                <span class="badge text-bg-secondary">Python</span>
+                                <span class="badge text-bg-secondary">Spring Boot</span>
+                                <span class="badge text-bg-secondary">Networking</span>
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Tools:</h3>
+                            <p>
+                                <span class="badge text-bg-secondary">VS CODE</span>
+                                <span class="badge text-bg-secondary">JIRA</span>
+                                <span class="badge text-bg-secondary">Trello</span>
+                                <span class="badge text-bg-secondary">Git</span>
+                            </p>
+                        </div>
+
+                    </div>
 
 
-            <div class="text-center">
-                <h3 class="text-info">My Education</h3>
-                <p>B.Sc in Software Engineering,
-                    <br>Yunnan University ( Kunming,Yunnan,China )
-                    <br><small>2018-2022</small>
-                </p>
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <div class="text-center">
+                            <h3 class="text-info">My Education</h3>
+                            <p>B.Sc in Software Engineering,
+                                <br>Yunnan University ( Kunming,Yunnan,China )
+                                <br><small>2018-2022</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -273,9 +290,9 @@
             <p>Copyright © 2021 | gias uddin</p>
             <p>kunming,yunnan,china</p>
             <div>
-                <a class="text-reset" href="https://github.com/"><i class="fa-brands fa-github"></i></a>
-                <a class="text-reset" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-                <a class="text-reset" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a class="text-info" href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                <a class="text-info"href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="text-info" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
     </footer>
@@ -283,7 +300,7 @@
     <div>
         <!-- <script src="/js/bootstrap.bundle.min.js"></script> -->
         <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
-        </div>
+    </div>
 </body>
 
 </html>
